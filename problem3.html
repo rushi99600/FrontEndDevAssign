@@ -5,68 +5,69 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <title>Problem 3</title>
+  <style>
+    .Container {
+      display: flex;
+    }
+
+    .A {
+      width: 25%;
+      text-align: right;
+    }
+
+    .B {
+      width: 70%;
+    }
+  </style>
+  <script src="https://kit.fontawesome.com/226901510b.js" crossorigin="anonymous"></script>
 </head>
+
 
 <body>
   <a href="problem1.html">Problem 1</a>
   <a href="problem2.html">Problem 2</a>
   <a href="problem3.html">Problem 3</a>
-  <h1 style="text-align:center;">Product Image</h1>
-
-  <table>
-    <tr>
-      <td rowspan="11" style="border: 1px solid black;" width="30%"><img src="shirt.jpg" alt="Shirt" width="400px"></td>
-    <tr>
-      <td>&emsp;<b>Blue Cotton Shirt</b></td>
-    </tr>
-    <tr>
-      <td>
-        <p style="color: green; font-size: 15px;">&emsp; shirts</p>
-      </td>
-    </tr>
-    <tr>
-      <td>
-        &emsp;<span class="fa fa-star checked" style="color:orange"></span>
-        <span class="fa fa-star checked" style="color:orange"></span>
-        <span class="fa fa-star checked" style="color:orange"></span>
-        <span class="fa fa-star checked" style="color:orange"></span>
-        <span class="fa fa-star-half-full" style="color:orange"></span>
-      </td>
-    </tr>
-    <tr>
-      <td> <b>&emsp;Rs.400</b> <s>Rs.800 </s><b style="color: green;">&ensp;50% Off</b></td>
-    </tr>
-    <tr>
-      <td width="60%" style="text-align:left;">&emsp;Lorem ipsum dolor sit amet consectetur adipisicing elit. <br>
-        &emsp;Tenetur maiores aut laborum, pariatur eos sed sint iure harum at, <br>&emsp; praesentium nemo consequuntur
-        hic, ut laudantium laboriosam <br>&emsp; nam facere amet
-        id?
-      </td>
-    </tr>
-    <tr>
-      <td> <b>&emsp;Color</b> &emsp;&emsp;&emsp; &ensp;Blue</td>
-
-    </tr>
-    <tr>
-      <td>&emsp;Availability:&emsp; 3 in Stock</td>
-    </tr>
-    <tr>
-      <td>&emsp;Select Size:&emsp;
-        <input type="radio"> <label>Small</label>
-        <input type="radio"> <label>Medium</label>
-        <input type="radio"> <label>Large</label>
-      </td>
-    </tr>
-    <tr>
-      <td>&emsp;Quantity:&emsp;</td>
-    </tr>
-    <tr>
-      <td>&emsp;<button type="button" style="background-color: blue; color:white;">Buy Now</button> &ensp;
-        <button type="button">Add to cart</button>
-      </td>
-    </tr>
-
-  </table>
+  <h3 style="text-align: center;">Product Page</h3>
+  <div class="Container">
+    <div class="A">
+      <img src="shirt.jpg" alt="shirt image" width="250" height="385" style="border:2px solid grey;">
+    </div>
+    <div style="width: 4%;"></div>
+    <div class="B">
+      <b>Black Cotton T-Shirt</b><br><br>
+      <small style="color: darkgray;">Shirts</small><br><br>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star"></i>
+      <i class="fa-solid fa-star-half-stroke"></i><br><br> Rs.400
+      <small><del>Rs.800</del></small>&nbsp;<a style="color: green;">50% Off</a>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Velit hic culpa neque fugiat<br> maiores officiis
+        commodi temporibus possimus, odit architecto, facere nihil dolores<br> provident earum tenetur! Sequi architecto
+        maiores dolores
+        iste veniam. Dolor rerum<br> officiis perspiciatis ab delectus. Obcaecati, aliquid.
+      </p>
+      <b>Color</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Black<br>
+      <b>Availability</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;3 in Stock<br><br>
+      <b>Select Size :</b>&nbsp;&nbsp;&nbsp;&nbsp;
+      <input type="radio">Small
+      <input type="radio" checked="checked">Medium
+      <input type="radio">Large
+      <br><br>
+      <b>Quantity :</b>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+      <select>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4" selected="select">4</option>
+        <option value="5">5</option>
+      </select><br><br>
+      <button style="background-color: rgb(12, 108, 235);color: white;width:80px;height:30px;border-radius: 5px;">Buy
+        Now</button> &nbsp;&nbsp;&nbsp;
+      <button style="width:100px;height:30px;border-radius: 5px;">Add to Cart</button>
+    </div>
+  </div>
 </body>
 
 </html>
